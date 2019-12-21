@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E9A86AA1A7B8BF0009FB74E /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9A86A91A7B8BF0009FB74E /* GStreamer.framework */; };
+		0E9A86AF1A7B8BF0009FB74E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9A86AE1A7B8BF0009FB74E /* main.m */; };
+		0E9A86B21A7B8BF0009FB74E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9A86B11A7B8BF0009FB74E /* AppDelegate.m */; };
+		0E9A86B51A7B8BF0009FB74E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9A86B41A7B8BF0009FB74E /* ViewController.m */; };
+		0E9A86B71A7B8BF0009FB74E /* fonts.conf in Resources */ = {isa = PBXBuildFile; fileRef = 0E9A86B61A7B8BF0009FB74E /* fonts.conf */; };
+		0E9A86B91A7B8BF1009FB74E /* Ubuntu-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E9A86B81A7B8BF1009FB74E /* Ubuntu-R.ttf */; };
+		0E9A86BB1A7B8BF1009FB74E /* gst_ios_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9A86BA1A7B8BF1009FB74E /* gst_ios_init.m */; };
+		0E9A86BF1A7B8BF1009FB74E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9A86BD1A7B8BF1009FB74E /* Main.storyboard */; };
+		0E9A86C11A7B8BF1009FB74E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9A86C01A7B8BF1009FB74E /* Images.xcassets */; };
+		0E9A86C41A7B8BF1009FB74E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9A86C21A7B8BF1009FB74E /* LaunchScreen.xib */; };
+		0E9A86D01A7B8BF1009FB74E /* GStreamerHelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9A86CF1A7B8BF1009FB74E /* GStreamerHelloWorldTests.m */; };
+		0E9A86DB1A7B90E6009FB74E /* GStreamerBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9A86DA1A7B90E6009FB74E /* GStreamerBackend.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E9A86CA1A7B8BF1009FB74E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E9A869E1A7B8BF0009FB74E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E9A86A51A7B8BF0009FB74E;
+			remoteInfo = GStreamerHelloWorld;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E9A86A61A7B8BF0009FB74E /* GStreamerHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GStreamerHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E9A86A91A7B8BF0009FB74E /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = Library/Frameworks/GStreamer.framework; sourceTree = DEVELOPER_DIR; };
+		0E9A86AD1A7B8BF0009FB74E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9A86AE1A7B8BF0009FB74E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E9A86B01A7B8BF0009FB74E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0E9A86B11A7B8BF0009FB74E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0E9A86B31A7B8BF0009FB74E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0E9A86B41A7B8BF0009FB74E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0E9A86B61A7B8BF0009FB74E /* fonts.conf */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = fonts.conf; sourceTree = "<group>"; };
+		0E9A86B81A7B8BF1009FB74E /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-R.ttf"; sourceTree = "<group>"; };
+		0E9A86BA1A7B8BF1009FB74E /* gst_ios_init.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gst_ios_init.m; sourceTree = "<group>"; };
+		0E9A86BC1A7B8BF1009FB74E /* gst_ios_init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gst_ios_init.h; sourceTree = "<group>"; };
+		0E9A86BE1A7B8BF1009FB74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E9A86C01A7B8BF1009FB74E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0E9A86C31A7B8BF1009FB74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0E9A86C91A7B8BF1009FB74E /* GStreamerHelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GStreamerHelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E9A86CE1A7B8BF1009FB74E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9A86CF1A7B8BF1009FB74E /* GStreamerHelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GStreamerHelloWorldTests.m; sourceTree = "<group>"; };
+		0E9A86D91A7B90E6009FB74E /* GStreamerBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GStreamerBackend.h; sourceTree = "<group>"; };
+		0E9A86DA1A7B90E6009FB74E /* GStreamerBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GStreamerBackend.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E9A86A31A7B8BF0009FB74E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9A86AA1A7B8BF0009FB74E /* GStreamer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9A86C61A7B8BF1009FB74E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E9A869D1A7B8BF0009FB74E = {
+			isa = PBXGroup;
+			children = (
+				0E9A86AB1A7B8BF0009FB74E /* GStreamerHelloWorld */,
+				0E9A86CC1A7B8BF1009FB74E /* GStreamerHelloWorldTests */,
+				0E9A86A81A7B8BF0009FB74E /* Frameworks */,
+				0E9A86A71A7B8BF0009FB74E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E9A86A71A7B8BF0009FB74E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E9A86A61A7B8BF0009FB74E /* GStreamerHelloWorld.app */,
+				0E9A86C91A7B8BF1009FB74E /* GStreamerHelloWorldTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E9A86A81A7B8BF0009FB74E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E9A86A91A7B8BF0009FB74E /* GStreamer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E9A86AB1A7B8BF0009FB74E /* GStreamerHelloWorld */ = {
+			isa = PBXGroup;
+			children = (
+				0E9A86B01A7B8BF0009FB74E /* AppDelegate.h */,
+				0E9A86B11A7B8BF0009FB74E /* AppDelegate.m */,
+				0E9A86B31A7B8BF0009FB74E /* ViewController.h */,
+				0E9A86B41A7B8BF0009FB74E /* ViewController.m */,
+				0E9A86D91A7B90E6009FB74E /* GStreamerBackend.h */,
+				0E9A86DA1A7B90E6009FB74E /* GStreamerBackend.m */,
+				0E9A86BD1A7B8BF1009FB74E /* Main.storyboard */,
+				0E9A86C01A7B8BF1009FB74E /* Images.xcassets */,
+				0E9A86C21A7B8BF1009FB74E /* LaunchScreen.xib */,
+				0E9A86AC1A7B8BF0009FB74E /* Supporting Files */,
+			);
+			path = GStreamerHelloWorld;
+			sourceTree = "<group>";
+		};
+		0E9A86AC1A7B8BF0009FB74E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E9A86AD1A7B8BF0009FB74E /* Info.plist */,
+				0E9A86AE1A7B8BF0009FB74E /* main.m */,
+				0E9A86B61A7B8BF0009FB74E /* fonts.conf */,
+				0E9A86B81A7B8BF1009FB74E /* Ubuntu-R.ttf */,
+				0E9A86BA1A7B8BF1009FB74E /* gst_ios_init.m */,
+				0E9A86BC1A7B8BF1009FB74E /* gst_ios_init.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E9A86CC1A7B8BF1009FB74E /* GStreamerHelloWorldTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E9A86CF1A7B8BF1009FB74E /* GStreamerHelloWorldTests.m */,
+				0E9A86CD1A7B8BF1009FB74E /* Supporting Files */,
+			);
+			path = GStreamerHelloWorldTests;
+			sourceTree = "<group>";
+		};
+		0E9A86CD1A7B8BF1009FB74E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E9A86CE1A7B8BF1009FB74E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E9A86A51A7B8BF0009FB74E /* GStreamerHelloWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E9A86D31A7B8BF1009FB74E /* Build configuration list for PBXNativeTarget "GStreamerHelloWorld" */;
+			buildPhases = (
+				0E9A86A21A7B8BF0009FB74E /* Sources */,
+				0E9A86A31A7B8BF0009FB74E /* Frameworks */,
+				0E9A86A41A7B8BF0009FB74E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GStreamerHelloWorld;
+			productName = GStreamerHelloWorld;
+			productReference = 0E9A86A61A7B8BF0009FB74E /* GStreamerHelloWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E9A86C81A7B8BF1009FB74E /* GStreamerHelloWorldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E9A86D61A7B8BF1009FB74E /* Build configuration list for PBXNativeTarget "GStreamerHelloWorldTests" */;
+			buildPhases = (
+				0E9A86C51A7B8BF1009FB74E /* Sources */,
+				0E9A86C61A7B8BF1009FB74E /* Frameworks */,
+				0E9A86C71A7B8BF1009FB74E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E9A86CB1A7B8BF1009FB74E /* PBXTargetDependency */,
+			);
+			name = GStreamerHelloWorldTests;
+			productName = GStreamerHelloWorldTests;
+			productReference = 0E9A86C91A7B8BF1009FB74E /* GStreamerHelloWorldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E9A869E1A7B8BF0009FB74E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Max Rozdobudko";
+				TargetAttributes = {
+					0E9A86A51A7B8BF0009FB74E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					0E9A86C81A7B8BF1009FB74E = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 0E9A86A51A7B8BF0009FB74E;
+					};
+				};
+			};
+			buildConfigurationList = 0E9A86A11A7B8BF0009FB74E /* Build configuration list for PBXProject "GStreamerHelloWorld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E9A869D1A7B8BF0009FB74E;
+			productRefGroup = 0E9A86A71A7B8BF0009FB74E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E9A86A51A7B8BF0009FB74E /* GStreamerHelloWorld */,
+				0E9A86C81A7B8BF1009FB74E /* GStreamerHelloWorldTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E9A86A41A7B8BF0009FB74E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9A86C41A7B8BF1009FB74E /* LaunchScreen.xib in Resources */,
+				0E9A86BF1A7B8BF1009FB74E /* Main.storyboard in Resources */,
+				0E9A86C11A7B8BF1009FB74E /* Images.xcassets in Resources */,
+				0E9A86B91A7B8BF1009FB74E /* Ubuntu-R.ttf in Resources */,
+				0E9A86B71A7B8BF0009FB74E /* fonts.conf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9A86C71A7B8BF1009FB74E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E9A86A21A7B8BF0009FB74E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9A86BB1A7B8BF1009FB74E /* gst_ios_init.m in Sources */,
+				0E9A86B51A7B8BF0009FB74E /* ViewController.m in Sources */,
+				0E9A86DB1A7B90E6009FB74E /* GStreamerBackend.m in Sources */,
+				0E9A86B21A7B8BF0009FB74E /* AppDelegate.m in Sources */,
+				0E9A86AF1A7B8BF0009FB74E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E9A86C51A7B8BF1009FB74E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9A86D01A7B8BF1009FB74E /* GStreamerHelloWorldTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E9A86CB1A7B8BF1009FB74E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E9A86A51A7B8BF0009FB74E /* GStreamerHelloWorld */;
+			targetProxy = 0E9A86CA1A7B8BF1009FB74E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E9A86BD1A7B8BF1009FB74E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E9A86BE1A7B8BF1009FB74E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E9A86C21A7B8BF1009FB74E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E9A86C31A7B8BF1009FB74E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E9A86D11A7B8BF1009FB74E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E9A86D21A7B8BF1009FB74E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E9A86D41A7B8BF1009FB74E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Library/Developer/GStreamer/iPhone.sdk",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "\"~/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers\"";
+				INFOPLIST_FILE = GStreamerHelloWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lresolv",
+					"-lstdc++",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-weak_framework",
+					VideoToolbox,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AssetsLibrary,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0E9A86D51A7B8BF1009FB74E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Library/Developer/GStreamer/iPhone.sdk",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "\"~/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers\"";
+				INFOPLIST_FILE = GStreamerHelloWorld/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lresolv",
+					"-lstdc++",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-weak_framework",
+					VideoToolbox,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AssetsLibrary,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0E9A86D71A7B8BF1009FB74E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GStreamerHelloWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GStreamerHelloWorld.app/GStreamerHelloWorld";
+			};
+			name = Debug;
+		};
+		0E9A86D81A7B8BF1009FB74E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GStreamerHelloWorldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GStreamerHelloWorld.app/GStreamerHelloWorld";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E9A86A11A7B8BF0009FB74E /* Build configuration list for PBXProject "GStreamerHelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9A86D11A7B8BF1009FB74E /* Debug */,
+				0E9A86D21A7B8BF1009FB74E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E9A86D31A7B8BF1009FB74E /* Build configuration list for PBXNativeTarget "GStreamerHelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9A86D41A7B8BF1009FB74E /* Debug */,
+				0E9A86D51A7B8BF1009FB74E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0E9A86D61A7B8BF1009FB74E /* Build configuration list for PBXNativeTarget "GStreamerHelloWorldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E9A86D71A7B8BF1009FB74E /* Debug */,
+				0E9A86D81A7B8BF1009FB74E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E9A869E1A7B8BF0009FB74E /* Project object */;
+}
